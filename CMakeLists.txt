@@ -60,6 +60,8 @@ juce_add_plugin(${PROJECT_NAME}
 
 target_sources(${PROJECT_NAME}
     PRIVATE
+        src/PluginEditor.h
+        src/PluginProcessor.h
         src/PluginEditor.cpp
         src/PluginProcessor.cpp)
 
