@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.15)
 # `project()` command. `project()` sets up some helpful variables that describe source/binary
 # directories, and the current project version. This is a standard CMake command.
 
-project("JUCE-playground" VERSION 0.0.1)
+project("JUCE-playground" VERSION 1.0.0) # CICD should be consistent with this version 
 
 SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static")
 
