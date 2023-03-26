@@ -48,7 +48,6 @@ jobs:
             C:\Windows\System32;
             set CD_LINUX=%CD:\=/%
             gcc --version &&^
-            cd JUCE-playground &&^
             cmake.exe -G "MinGW Makefiles" ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DBUILD_SHARED_LIBS=OFF ^
