@@ -61,12 +61,12 @@ jobs:
           uses: thedoctor0/zip-release@master
           with:
             type: 'zip'
-            directory: "cmake-build/${{ env.cmakeInstallationPath }}"
+            directory: "cmake-build/JUCE-playground_artefacts/Release"
             filename: "${{ env.mingwTargetZip }}"
-
+            
         - name: Release prebuilt
           uses: ncipollo/release-action@v1
           with:
-            artifacts: "cmake-build/${{ env.cmakeInstallationPath }}/${{ env.mingwTargetZip }}"
+            artifacts: "cmake-build/JUCE-playground_artefacts/Release/${{ env.mingwTargetZip }}"
             allowUpdates: true
             token: ${{ secrets.GITHUB_TOKEN }}
